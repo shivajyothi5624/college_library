@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>College library</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Colllege libraray</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" >Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <h1 class="text-center my-2"> College libraray</h1>
+    <div class="container">
+      <form>
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label" >Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="name">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Authour</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="authour">
+          </div>
+        </div>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Book type</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="python" value="python" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Python
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="java" value="java">
+              <label class="form-check-label" for="gridRadios2">
+                java
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="web" value="web">
+              <label class="form-check-label" for="gridRadios3">
+                Web
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+      <div class="container">
+      <button  class="btn btn-primary mx-2" id="add">Add</button>
+        <button   class="btn btn-primary" >clear all</button>
+      </div>
+    </div>
+    <hr class="container">
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Authour</th>
+            <th scope="col">type</th>
+            <th scope="col">issued</th>
+            <th scope="col">returned</th>
+          </tr>
+        </thead>
+        <tbody id="tablebody">
+        </tbody>
+      </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/jscript.js"></script>
+  </body>
+</html>
