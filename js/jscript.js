@@ -73,11 +73,12 @@ add.addEventListener("click", ()=>{
     if(localStorage.getItem("dateitems") != null)
     {
         arr = JSON.parse(localStorage.getItem("dateitems"));
+        arr.forEach(element => {
+          td1 = document.getElementById(element[0]);
+          td1.innerHTML = ` <p>${element[1]}</p>`
+        });
     }
-    arr.forEach(element => {
-      td1 = document.getElementById(element[0]);
-      td1.innerHTML = ` <p>${element[1]}</p>`
-    });
+   
   }
   afterreload2();
 function changeduedate(index)
@@ -101,3 +102,13 @@ function changeduedate(index)
     td1.innerHTML = ` <p>${date}</p>`
 };
 
+function cleared()
+{
+
+  if(confirm("Do you really want to clear!!!!"))
+  {
+    localStorage.clear();
+    document.getElementById("tablebody").innerHTML="";
+  }
+
+}
